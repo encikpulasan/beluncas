@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme (default) */
+    --primary-50: #f0f9ff;
+    --primary-100: #e0f2fe;
+    --primary-200: #bae6fd;
+    --primary-300: #7dd3fc;
+    --primary-400: #38bdf8;
+    --primary-500: #0ea5e9;
+    --primary-600: #0284c7;
+    --primary-700: #0369a1;
+    --primary-800: #075985;
+    --primary-900: #0c4a6e;
+
+    --secondary-50: #fdf2f8;
+    --secondary-100: #fce7f3;
+    --secondary-200: #fbcfe8;
+    --secondary-300: #f9a8d4;
+    --secondary-400: #f472b6;
+    --secondary-500: #ec4899;
+    --secondary-600: #db2777;
+    --secondary-700: #be185d;
+    --secondary-800: #9d174d;
+    --secondary-900: #831843;
+
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --card: #ffffff;
+    --card-foreground: #0f172a;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --border: #e2e8f0;
+  }
+
+  .dark-theme {
+    --primary-50: #0c4a6e;
+    --primary-100: #075985;
+    --primary-200: #0369a1;
+    --primary-300: #0284c7;
+    --primary-400: #0ea5e9;
+    --primary-500: #38bdf8;
+    --primary-600: #7dd3fc;
+    --primary-700: #bae6fd;
+    --primary-800: #e0f2fe;
+    --primary-900: #f0f9ff;
+
+    --secondary-50: #831843;
+    --secondary-100: #9d174d;
+    --secondary-200: #be185d;
+    --secondary-300: #db2777;
+    --secondary-400: #ec4899;
+    --secondary-500: #f472b6;
+    --secondary-600: #f9a8d4;
+    --secondary-700: #fbcfe8;
+    --secondary-800: #fce7f3;
+    --secondary-900: #fdf2f8;
+
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --card: #1e293b;
+    --card-foreground: #f8fafc;
+    --muted: #334155;
+    --muted-foreground: #94a3b8;
+    --border: #1e293b;
+  }
+
+  .green-theme {
+    --primary-50: #f0fdf4;
+    --primary-100: #dcfce7;
+    --primary-200: #bbf7d0;
+    --primary-300: #86efac;
+    --primary-400: #4ade80;
+    --primary-500: #22c55e;
+    --primary-600: #16a34a;
+    --primary-700: #15803d;
+    --primary-800: #166534;
+    --primary-900: #14532d;
+
+    --secondary-50: #eff6ff;
+    --secondary-100: #dbeafe;
+    --secondary-200: #bfdbfe;
+    --secondary-300: #93c5fd;
+    --secondary-400: #60a5fa;
+    --secondary-500: #3b82f6;
+    --secondary-600: #2563eb;
+    --secondary-700: #1d4ed8;
+    --secondary-800: #1e40af;
+    --secondary-900: #1e3a8a;
+  }
+
+  .purple-theme {
+    --primary-50: #faf5ff;
+    --primary-100: #f3e8ff;
+    --primary-200: #e9d5ff;
+    --primary-300: #d8b4fe;
+    --primary-400: #c084fc;
+    --primary-500: #a855f7;
+    --primary-600: #9333ea;
+    --primary-700: #7e22ce;
+    --primary-800: #6b21a8;
+    --primary-900: #581c87;
+
+    --secondary-50: #fff7ed;
+    --secondary-100: #ffedd5;
+    --secondary-200: #fed7aa;
+    --secondary-300: #fdba74;
+    --secondary-400: #fb923c;
+    --secondary-500: #f97316;
+    --secondary-600: #ea580c;
+    --secondary-700: #c2410c;
+    --secondary-800: #9a3412;
+    --secondary-900: #7c2d12;
+  }
+}
+
+/* Global styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Transition for theme changes */
+* {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
