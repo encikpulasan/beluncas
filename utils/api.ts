@@ -1,8 +1,8 @@
 // API client for Charity Shelter backend
 
 // API Configuration
-const API_BASE_URL = "http://localhost:8000";
-const API_KEY = "7b6acf9d51554ae4a480bd843a979942"; // In production, this should be loaded from environment variables
+const API_BASE_URL = Deno.env.get("API_BASE_URL") || "http://localhost:8000";
+const API_KEY = Deno.env.get("API_KEY") || ""; // Fallback to empty string if not set
 
 // Token and user management
 let authToken: string | null = null;

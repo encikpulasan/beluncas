@@ -423,7 +423,7 @@
 		},
 		{
 			"key": "api_key",
-			"value": "7b6acf9d51554ae4a480bd843a979942",
+			"value": "{{API_KEY}}",
 			"type": "string"
 		},
 		{
